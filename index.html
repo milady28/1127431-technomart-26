@@ -11,8 +11,12 @@
 		<img src="img/logo-technomart.svg" alt="Логотип магазина ТЕХНОМАРТ">
 	</a>
     <div>
-        <p>Поиск:</p> 
-        <!-- Здесь будет форма! --> 
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label for="search">Поиск:</label>
+            <input type="search" name="search" id="search">
+        </p> 
+    </form>
         <a href="">Закладки:</a>
         <a href="">Корзина:</a>
         <a href="">Оформить заказ</a>
@@ -62,6 +66,8 @@
             Дрели<br>
             соседям на радость!
             <a href="catalog.html">Открыть каталог</a>
+            <button type="button">Вперед</button>
+            <button type="button">Назад</button>
         </li>
         <li><img src="img/icon-4.svg">
             <a href="">Скидки 50%<br>
@@ -166,19 +172,15 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <button type="button">Доставка</button>
-        <!-- Здесь будет форма -->
-        <h2>ДОСТАВКА</h2>
+        <h2>Доставка</h2>
         <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
             <img src="img/truck.png">
         </p>
         <button type="button">Гарантия</button>
-        <!-- Здесь будет форма -->
         <button type="button">Кредит</button>
-        <!-- Здесь будет форма -->
-    </section>
     <section>
-        <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+        <h2>Компания "ТЕХНОМАРТ"</h2>
         <p>
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
         </p>
@@ -194,11 +196,10 @@
         <a href="">Подробнее о компании</a>
     </section>
     <section>
-        <h2>КОНТАКТЫ</h2>
+        <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map.png" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        <button type="button">Заблудились? Напишите нам!</button>
-        <!-- Здесь будет форма! --> 
+        <img src="img/map.png" alt="Наш адрес на карте: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <a href="">Заблудились? Напишите нам!</a>
     </section>
 </main>
     <footer>
@@ -240,5 +241,26 @@
                 <a href="https://htmlacademy.ru">htmlacademy.ru</a>
             </p>
     </footer>
+    <section>
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-login"></label>
+                <input type="text" name="login" id="user-login" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="user-password"></label>
+                <input type="password" name="password" id="user-password" placeholder="xxxxxxxx">
+            </p>
+            <p>
+                <input type="checkbox" name="remember" id="remember" checked="">
+                <label for="remember">Запомнить меня</label>
+                <a href="">Я забыл пароль!</a>
+            </p>
+            <button type="submit">Войти</button>
+        </form>
+        <button type="button">Закрыть</button>
+    </section>
 </body>
 </html>

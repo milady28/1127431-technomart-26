@@ -11,8 +11,12 @@
         <img src="img/logo-technomart.svg" alt="Логотип магазина ТЕХНОМАРТ">
     </a>
     <div>
-        <p>Поиск:</p> 
-        <!-- Здесь будет форма! --> 
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label for="search">Поиск:</label>
+            <input type="search" name="search" id="search">
+        </p> 
+      </form>
         <a href="">Закладки:</a>
         <a href="">Корзина:</a>
         <a href="">Оформить заказ</a>
@@ -22,8 +26,9 @@
         +7 (812) 555-05-55<br>
         г. Санкт-Петербург, б. Конюшенная, д.19/8
     </p>
-    <button type="button">Войти</button>
-    <a href="">Регистрация</a>
+    <!-- Имя, фамилия пользователя -->
+    <a href="">Мои заказы</a>
+    <a href="">Личный кабинет</a>
     <ul>
         <li><a href="">Главная</a></li>
         <li><a href="">Компания</a></li>
@@ -42,26 +47,67 @@
         <li><a href="">Инструмент</a></li>
         <li><a href="">Перфораторы</a></li>
     </ul>
-    <h1>ПЕРФОРАТОРЫ</h1>
+    <h1>Перфораторы</h1>
     <section>
         <h2>Производители:</h2>
-        <ul>
-            <li>BOSCH</li>
-            <li>ИНТЕРСКОЛ</li>
-            <li>MAKITA</li>
-            <li>DEWALT</li>
-            <li>HITACHI</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Питание:</h2>
-        <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-        </ul>
-    </section>
-    <section>
+        <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=price-filter.value">
+          <h3>Фильтр:</h3>
+          <fieldset>
+            <legend>Цена:</legend>
+            <label for="price-filter">Фильтр по цене</label>
+            0 <input type="range" min="0" max="30000" step="1" name="price-filter" id="price-filter"> 30000
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="BOSCH-filter" id="BOSCH-filter">
+                <label for="BOSCH-filter">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" name="ИНТЕРСКОЛ-filter" id="ИНТЕРСКОЛ-filter">
+                <label for="ИНТЕРСКОЛ-filter">ИНТЕРСКОЛ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="MAKITA-filter" id="MAKITA-filter">
+                <label for="MAKITA-filter">MAKITA</label>
+              </li>
+              <li>
+                <input type="checkbox" name="DEWALT-filter" id="DEWALT-filter">
+                <label for="DEWALT-filter">DEWALT</label>
+              </li>
+              <li>
+                <input type="checkbox" name="HITACHI-filter" id="HITACHI-filter">
+                <label for="HITACHI-filter">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="power-filter" id="power-filter">
+                <label for="power-filter">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power-filter" id="power-filter">
+                <label for="power-filter">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
         <h2>Товары</h2>
+        <div>
+          <h3>Сортировка:</h3>
+          <button type="button">По цене</button>
+          <button type="button">По типу</button>
+          <button type="button">По функционалу</button>
+          <button type="button">По возрастанию</button>
+          <button type="button">По убыванию</button>
+        </div>
         <ul>
           <li>
             <a href="">
