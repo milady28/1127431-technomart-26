@@ -2,23 +2,32 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Cuprum", Myriad Pro, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 17px;
 	font-weight: 400;
 	color: #000000;
 
-  	background-image: url("../img/background.png");
   	background-color: #ffffff;
-  	background-repeat: no-repeat;
 }
 
 a {
 	text-decoration: none;
-	color: #ffffff;
 }
 
-header {
+.visualy-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(0 0 0 0);
+	overflow: hidden;
+}
+
+.header-background {
 	background-color: #f3f7f8;
 }
 
@@ -26,6 +35,7 @@ header {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	color: #ffffff;
 
 	background-color: #ee3643;
 }
@@ -40,7 +50,7 @@ header {
 
 .button-catalog,
 .button-page-style a {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -75,6 +85,7 @@ header {
 .button-buy {
 	font-size: 14px;
 	line-height: 18px;
+	color: #ffffff;
 	text-transform: uppercase;
 
 	background-image: url("../img/icon-cart.svg");
@@ -110,8 +121,15 @@ header {
 	opacity: 0.3;
 }
 
+.button-close {
+	background-image: url("../img/icone-close.svg");
+	background-repeat: no-repeat;
+}
+
 .popap-basket {
-	background-image: url("../img/pattern-popap-basket.png");
+	background-color: #ffffff;
+
+	box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
 }
 
 .popap-basket p {
@@ -123,28 +141,29 @@ header {
 }
 
 .logo-head {
-  background-image: url("../img/logo-head.png");
-  background-repeat: no-repeat;
+  background-color: #ee3643;
 }
 
-.logo-head a:hover,
-.logo-head a:active {
+.logo-head:hover {
 	background-color: #ca2c37;
 }
 
-.head-menu {
-
-	font-size: 17px;
-	line-height: 18px;
-
-	color: #ffffff;
-
-	background-image: url("../img/pattern-header.png");
-	background-color: #293449;
-	background-repeat: repeat;
+.logo-head:active {
+	background-color: #ba2732;
 }
 
-.head-menu a:hover {
+.head-menu {
+	background-color: #293449;
+}
+
+.head-menu a {
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.head-menu .bookmarks:hover,
+.head-menu .basket:hover {
 	background-color: #212a3a;
 }
 
@@ -157,10 +176,8 @@ header {
 }
 
 .head-menu .checkout:active,
-.head-menu a:active,
-.logo-head a:active {
-	color: #000000;
-
+.head-menu .bookmarks:active,
+.head-menu .basket:active {
 	opacity: 0.5;
 }
 
@@ -169,6 +186,8 @@ header {
 } 
 
 .icon-search {
+	color:#ffffff;
+
 	background-image: url("../img/icon-search.svg");
 	background-repeat: no-repeat;
 }
@@ -228,9 +247,11 @@ header {
 } 
 
 .navigation-menu {
-	background-image: url("../img/pattern-menu.png");
-	background-position: top center;
-	background-repeat: no-repeat;
+	background-color: #32425c;
+}
+
+.navigation-menu a {
+	color: #ffffff;
 }
 
 .navigation-menu a:hover {
@@ -238,8 +259,6 @@ header {
 }
 
 .navigation-menu a:active {
-	color: #000000;
-
 	opacity: 0.5;
 }
 
@@ -289,6 +308,10 @@ header {
 	color: #ffffff;
 }
 
+.menu-sliders a {
+	color: #ffffff;
+}
+
 .menu-sliders h3 {
 	font-size: 24px;
 	line-height: 30px;
@@ -307,7 +330,6 @@ header {
 .materials a {
 	background-color: #dda028;
 }
-
 
 .tools {
 	background-image: url("../img/icon-2.svg");
@@ -424,7 +446,7 @@ header {
 }
 
 .filter-sorting-title {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -435,7 +457,7 @@ header {
 }
 
 .filter-catalog legend {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 30px;
@@ -457,7 +479,7 @@ header {
 
 .filter-fabricator label,
 .filter-power label {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 20px;
@@ -478,7 +500,7 @@ header {
 }
 
 .sorting-type a {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -521,12 +543,11 @@ header {
 
 .popular-products,
 .products {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: 700;
 }
-
 
 .popular-products ul,
 .products ul {
@@ -536,10 +557,15 @@ header {
 .popular-products li,
 .products li {
 	background-color: #ffffff;
-
+	
 	border: 1px solid;
 	border-color: #e5e5e5;
 }
+
+.popular-products li:hover,
+.products li:hover {
+	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+} 
 
 .popular-products del,
 .products del {
@@ -555,7 +581,7 @@ header {
 	color: #ffffff;
 	text-decoration: none;
 
-	background-image: url("../img/price.png");
+	background-color: #ee3643;
 }
 
 .popular-fabricators ul {
@@ -570,9 +596,11 @@ header {
 	border-color: #e5e5e5;
 }
 
-/* .popular-fabricators a:hover {
-не знаю как разметить графику
-} */
+.popular-fabricators a:hover {
+	border: 1px solid;
+	border-color: #e5e5e5;
+	box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
+} 
 
 .popular-fabricators a:active {
 	opacity: 0.3;
@@ -590,15 +618,19 @@ header {
 	text-transform: uppercase;
 }
 
+.services a {
+	color: #ffffff;
+}
+
 .services-delivery a:hover,
 .services-guarantee a:hover,
-.services-credit a:hover {
+.credit-link:hover {
 	background-color: #293449;
 }
 
 .services-delivery a:active,
 .services-guarantee a:active,
-.services-credit a:active {
+.credit-link:active {
 	color: #32425c;
 
 	background-color: #ffffff;
@@ -681,8 +713,8 @@ header {
 }
 
 .popap-feedback {
-	background-image: url("../img/pattern-feedback.png");
-	background-repeat: no-repeat;
+	background-color: #ffffff;
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
 .popap-feedback ul {
@@ -696,15 +728,14 @@ header {
 
 .popap-feedback input[placeholder],
 .popap-feedback textarea[placeholder] {
-	font-family: "PT Sans", Myriad Pro, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
 
 
 .logo-footer {
-	background-image: url("../img/logo-footer.png");
-  	background-repeat: no-repeat;
+	background-color: #ee3643;
 }
 
 .footer-menu {
@@ -712,9 +743,11 @@ header {
 	line-height: 24px;
 	color: #ffffff;
 
-	background-image: url("../img/pattern-footer.png");
-	background-repeat: no-repeat;
 	background-color: #32425c;
+}
+
+.footer-menu a {
+	color: #ffffff;
 }
 
 .footer-menu ul {
@@ -732,7 +765,7 @@ header {
 
 .footer-menu-main a:active,
 .footer-menu-item a:active {
-	color: #000000;
+	text-decoration: none;
 
 	opacity: 0.5;
 }
@@ -742,8 +775,6 @@ header {
 	line-height: 18px;
 	color: #ffffff;
 
-	background-image: url("../img/pattern-footer2.png");
-	background-repeat: no-repeat;
 	background-color: #293449;
 }
 
@@ -793,16 +824,4 @@ header {
 	color: #ee3643;
 
 	text-decoration: none;
-}
-
-.visualy-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(0 0 0 0);
-	overflow: hidden;
 }
