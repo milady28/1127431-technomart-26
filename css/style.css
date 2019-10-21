@@ -12,7 +12,7 @@ body {
 
   	box-sizing: border-box;
 
-  	/*background-image: url("../img/technomart-catalog.jpg");
+  /*	background-image: url("../img/technomart-catalog.jpg");
   	background-repeat: no-repeat;
   	background-position: top center;*/
 }
@@ -83,6 +83,8 @@ a {
 	line-height: 18px;
 	color: #000000;
 
+	border-radius: 4px;
+
 	text-transform: uppercase;
 
 	background-color: #ffffff;
@@ -91,11 +93,16 @@ a {
 	border-color: #e5e5e5;
 }
 
-.button-page a:hover {
+.button-catalog:hover,
+.button-page a:hover,
+.button-page-next a:hover {
 	border-color: #bdc6ca;
 }
 
-.button-page a:active {
+
+.button-catalog:active,
+.button-page a:active,
+.button-page-next a:active {
 	border-color: #ee3643;
 }
 
@@ -133,6 +140,8 @@ a {
 
 .button-page-current a {
 	color: #ffffff;
+
+	padding-bottom: 14px; 
 
 	border: 0;
 
@@ -376,14 +385,16 @@ a {
 	margin-top: 33px;
 }
 
+form.search {
+	position: relative;
+}
+
 .search {
 	margin: 0;
 	padding: 0;
 }
 
 .search input {
-	position: relative;
-
 	margin: 0;
 	padding: 0;
 
@@ -393,16 +404,18 @@ a {
 	margin-left: 47px;
 
 	width: 223px;
-	height: 42px;
+	height: 43px;
 }
 
 .search button {
 	position: absolute;
 
-	padding-top: 10px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	padding-left: 0px;
+	left: 0px;
+
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-right: 14px;
+	padding-left: 16px;
 
 	font-size: 0;
 
@@ -410,6 +423,10 @@ a {
 	border: 0;
 
 	cursor: pointer;
+}
+
+.search svg {
+	opacity: 0.3;
 }
 
 .search input::-webkit-input-placeholder {
@@ -432,10 +449,6 @@ a {
 	color: #ffffff;
 }
 
-.search input[placeholder] {
-	border: 0;
-}
-
 .search input:focus {
 	padding-left: 0px;
 
@@ -445,20 +458,19 @@ a {
 	color: #000000;
 }
 
-.search input:focus + button svg {
-	fill: #ee3643;
+.search input:focus {
+	outline: none;
 }
 
-.search svg {
-	position: relative;
-
-	opacity: 0.3;
-
-	top: 2px;
-	left: 17px;
+.search input:focus + button {
+	background-color: #ffffff;
 }
 
-.search svg:hover {
+.search input:focus + button path {
+	fill: #f15661;
+}
+
+.search button:hover svg {
 	opacity: 1;
 }
 
@@ -658,7 +670,7 @@ a {
 	color: #000000;
 	white-space: nowrap;
 
-	padding-right: 67px;
+	padding-right: 20px;
 	padding-left: 30px;
 	padding-bottom: 12px;
 	padding-top: 12px;
@@ -681,6 +693,11 @@ a {
 
 .account-exit {
 	position: relative;
+
+	padding-top: 12px;
+	padding-right: 15px;
+	padding-bottom: 18px;
+	padding-left: 32px;
 
 	font-size: 0;
 }
@@ -1189,6 +1206,8 @@ a {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-color: #b9a896;
+
+	display: none;
 }
 
 .slider-perforator h3 {
@@ -1205,6 +1224,8 @@ a {
 }
 
 .catalog-title {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
 	
@@ -1521,6 +1542,10 @@ fieldset.filter-fabricator {
 	background-position: 0 0;
 }
 
+.filter-fabricator input:checked + label::before {
+	background-image: none;
+}
+
 .filter-fabricator input:checked + label::after {
 	content: '';
 
@@ -1576,6 +1601,10 @@ fieldset.filter-power {
 	background-image: url("../img/radio-off.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.filter-power input:checked + label::before {
+	background-image: none;
 }
 
 .filter-power input:checked + label::after {
@@ -1716,8 +1745,6 @@ fieldset.filter-power {
 .popular-products article,
 .products article {
 	background-color: #ffffff;
-
-	display: none;
 	
 	position: relative;
 
@@ -1733,6 +1760,29 @@ fieldset.filter-power {
 	margin-top: 19px;
 	margin-right: 20px;
 }
+
+/*.product-new::after {
+	content: 'new';
+
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #ffffff;
+
+	display: inline-block;
+
+	position: absolute;
+
+	transform: rotate(45deg);
+
+	padding-left: -40px;
+
+	width: 70px;
+	height: 24px;
+
+	background-color: #ee3643;
+}*/
 
 .products article {
 	margin: 0;
@@ -1796,7 +1846,7 @@ ins::after {
 
 	width: 0; 
 	height: 0;
-	border-top: 19px solid ;
+	border-top: 18px solid ;
 	border-left: 20px solid #ee3643;
 	border-bottom: 19px solid;
 }
@@ -1911,7 +1961,7 @@ ins::after {
 
 	padding-top: 66px;
 
-	margin-top: 76px;
+	margin-top: 75px;
 }
 
 .services ul {
@@ -1929,7 +1979,7 @@ ins::after {
 .services-item {
 	display: flex;
 
-	margin-top: 57px;
+	margin-top: 56px;
 }
 
 .services-item .delivery-link,
@@ -2034,7 +2084,7 @@ ins::after {
 	width: 468px;
 	height: 261px;
 
-	top: 23px;
+	top: 22px;
 	left: 231px;
 
 	background-image: url("../img/delivery.png");
@@ -2239,7 +2289,7 @@ ins::after {
 .footer-background {
 	background-color: #32425c;
 
-	margin-top: 151px;
+	margin-top: 149px;
 }
 
 .footer-catalog .footer-background {
@@ -2350,7 +2400,8 @@ ins::after {
 	color: #ffffff;
 
 	background-color: #293449;
-	padding-top: 11px;
+	padding-top: 10px;
+	padding-bottom: 14px;
 }
 
 .address-footer {
@@ -2626,6 +2677,39 @@ ins::after {
 	line-height: 18px;
 }
 
+.popap-map {
+	display: block;
+
+	position: fixed;
+
+	overflow: auto;
+    left: 50%;
+    top: 50%;
+    z-index:9999;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+.popap-map img {
+	position: relative;
+}
+
+.popap-map .button-close {
+	font-size: 0;
+
+	position: absolute;
+
+	right: 15px;
+	top: 15px;
+
+	padding: 0;
+ 	border: none;
+  	color: inherit;
+  	background-color: transparent;
+  	cursor: pointer;
+}
+
 .popap-basket {
 	display: flex;
 	flex-direction: column;
@@ -2645,6 +2729,8 @@ ins::after {
 	border-top-color: #ff5357;
 
 	box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
+
+	display: none;
 }
 
 .popap-basket p {
@@ -2681,8 +2767,8 @@ ins::after {
 
 	padding-top: 37px;
 	padding-bottom: 37px;
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: 88px;
+	padding-right: 88px;
 }
 
 .button-popap-basket .button {
@@ -2706,6 +2792,14 @@ ins::after {
   	cursor: pointer;
 
 	border-radius: 4px;
+}
+
+.button-popap-basket .button-catalog:hover {
+	border-color: #bdc6ca;
+}
+
+.button-popap-basket .button-catalog:active {
+	border-color: #ee3643;
 }
 
 .button-popap-basket .button-close {
