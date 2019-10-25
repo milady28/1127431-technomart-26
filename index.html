@@ -20,7 +20,7 @@
                         <form class="search" action="https://echo.htmlacademy.ru" method="get">
                             <input type="search" name="search" id="search" placeholder="Поиск:">
                             <button type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                <svg width="17" height="17" viewBox="0 0 17 17">
                                 <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
                                 Поиск
                             </svg>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="button-head">
                         <a class="button-logout" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <svg width="20" height="17" viewBox="0 0 20 17">
                             <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
                             Войти</a>
                         <a class="registration" href="#">Регистрация</a>
@@ -49,7 +49,7 @@
                 </div>
                 <nav class="container">
                     <div class="navigation-menu">
-                        <ul class="navigation-list">
+                        <ul>
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">Компания</a></li>
                             <li><a href="catalog.html">Каталог</a></li>
@@ -67,20 +67,21 @@
                         <h2 class="visualy-hidden">Меню главной страницы</h2>
                         <div class="menu-sliders">
                             <div class="first-line-sliders">
-                                <div class="materials">
+                                <div class="slider-block-small materials">
+                                    <span class="new-item">new</span>
                                     <h3>Материалы</h3>
                                     <a href="#">на любой вкус</a>
                                 </div>
-                                <div class="tools">
+                                <div class="slider-block-small tools">
                                     <h3>Инструмент</h3>
                                     <a href="#">на все случаи</a>       
                                 </div>
-                                <div class="technics">
+                                <div class="slider-block-small technics">
                                     <h3>Техника</h3>
                                     <a href="#">для стройки</a>
                                 </div>
                             </div>
-                            <div class="slider-drill">
+                            <div class="slider-block-big slider-drill">
                                 <h3>Дрели</h3>
                                     <p>Cоседям на радость!</p>
                                 <a class="button" href="catalog.html">Открыть каталог</a>
@@ -91,19 +92,23 @@
                                     <img src="img/icon-left.svg" width="22" height="40">
                                 Назад</a>
                             </div>
-                            <div class="slider-perforator">
+                            <div class="slider-block-big slider-perforator">
                                 <h3>Перфораторы</h3>
                                 <p>Настоящие мужские игрушки</p>
                                 <a class="button" href="catalog.html">Открыть каталог</a>
-                                <button type="button">Вперед</button>
-                                <button type="button">Назад</button>
+                                <a class="button-forward" href="#">
+                                    <img src="img/icon-right.svg" width="22" height="40">
+                                Вперед</a>
+                                <a class="button-back" href="#">
+                                    <img src="img/icon-left.svg" width="22" height="40">
+                                Назад</a>
                             </div>
                             <div class="second-line-sliders">
-                                <div class="sales">
+                                <div class="slider-block-small sales">
                                     <h3>Скидки 50%</h3>
                                     <a href="#">на 350 товаров</a>
                                 </div>
-                                <div class="delivery">
+                                <div class="slider-block-small delivery">
                                     <h3>Доставка</h3>
                                     <a href="#">бесплатно</a>
                                 </div>
@@ -117,7 +122,7 @@
                     </div>
                     <div class="popular-products container">
                         <ul>
-                            <li>
+                            <li class="products">
                                 <article>
                                     <img src="img/Perforator_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
                                     <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -129,7 +134,7 @@
                                     </div>
                                 </article>
                             </li>
-                            <li>
+                            <li class="products">
                                 <article>
                                     <img src="img/Perforator_3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                                     <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -139,7 +144,7 @@
                                     <a class="button-bookmarks" href="#">В закладки</a>
                                 </article>
                             </li>
-                            <li>
+                            <li class="products">
                                 <article>
                                     <img src="img/Perforator_6000.jpg" alt="Перфоратор BOSCH BFG 6000">
                                     <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -149,9 +154,10 @@
                                     <a class="button-bookmarks" href="#">В закладки</a>
                                 </article>
                             </li>
-                            <li>
+                            <li class="products">
                                 <article>
                                     <img src="img/Perforator_2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+                                    <span class="new-item">new</span>
                                     <h3>Перфоратор BOSCH BFG 2000</h3>
                                         <ins>12500 Р.</ins>
                                     <a class="button-buy" href="#">Купить</a>
@@ -218,10 +224,10 @@
                         <h2>Сервисы</h2>
                             <p>Хороший интернет-магазин отчичается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                         <div class="services-item">
-                            <ul>
-                                <li><a class="delivery-link" href="#">Доставка</a></li>
-                                <li><a class="guarantee-link" href="#">Гарантия</a> </li>
-                                <li><a class="credit-link" href="#">Кредит</a></li>
+                            <ul class="servises-link">
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Гарантия</a> </li>
+                                <li><a href="#">Кредит</a></li>
                             </ul>
                             <ul>
                                 <li class="services-delivery">
@@ -282,13 +288,13 @@
                                 </a>
                                 </div>
                                 <div class="footer-menu-main">
-                                <ul>
-                                    <li><a href="#">Компания</a></li>
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="catalog.html">Каталог</a></li>
-                                    <li><a href="#">Доставка</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                </ul>
+                                    <ul>
+                                        <li><a href="#">Компания</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="catalog.html">Каталог</a></li>
+                                        <li><a href="#">Доставка</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="container">
@@ -300,7 +306,7 @@
                                         </p>
                                     </div>
                                     <div class="footer-menu-item">
-                                        <ul >
+                                        <ul>
                                             <li><a href="#">Материалы</a></li>
                                             <li><a href="#">Техника</a></li>
                                             <li><a href="#">Инструмент</a></li>
@@ -322,17 +328,17 @@
                                 </div>
                                 <div class="footer-network">
                                     <ul>
-                                        <li class="vkontakte">
+                                        <li>
                                             <a href="https://vk.com">
                                             <img src="img/icon-vk.svg" width="26" height="15">
                                             Вконтакте</a>
                                         </li>
-                                        <li class="facebook">
+                                        <li>
                                             <a href="https://www.facebook.com">
                                             <img src="img/icon-fb.svg" width="12" height="22">
                                             Фейсбук</a>
                                         </li>
-                                        <li class="instagram">
+                                        <li>
                                             <a href="https://www.instagram.com">
                                             <img src="img/icon-insta.svg" width="21" height="21">
                                             Инстаграм</a>
@@ -357,16 +363,16 @@
                 </div>
             </footer>
             <!-- Попап "обратная связь" -->
-                <!-- <div class="popap-feedback">
-                    <form action="https://echo.htmlacademy.ru" method="get">
-                        <ul class="popap-feedback-block">
+                <div class="popap-feedback">
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <ul>
                             <li class="popap-feedback-name">
-                                <p><label for="name">Ваше имя:</label></p>
-                                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                                <p><label for="username">Ваше имя:</label></p>
+                                <input type="text" name="username" id="username" placeholder="Имя Фамилия">
                             </li>
-                            <li class="popap-feedback-e-mail">
-                                <p><label for="e-mail">Ваш e-mail:</label></p>
-                                <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+                            <li class="popap-feedback-email">
+                                <p><label for="email">Ваш e-mail:</label></p>
+                                <input type="text" name="email" id="email" placeholder="email@example.com">
                             </li>
                             <li class="popap-feedback-letter">
                                 <p><label for="letter">Текст письма:</label></p>
@@ -378,11 +384,16 @@
                             <button class="button-close" type="button">Закрыть</button>
                         </div>
                     </form>
-                </div> -->
+                </div>
                 <!-- Попап "карта" -->
                 <div class="popap-map">
-                    <img src="img/map-popap.png">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CGDl4Ro8" width="945" height="450" frameborder="1" allowfullscreen="true"></iframe>
+                    <a  href="big-map.html">
+                        <img src="img/map-popap.png" width="300" height="158" alt="Магазин находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                    </a>
                     <button class="button-close" type="button">Закрыть</button>
                 </div>
+                <script src="js/feedback.js"></script>
+                <script src="js/map.js"></script>
         </body>
     </html>
