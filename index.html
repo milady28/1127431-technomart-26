@@ -1,9 +1,11 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 <!DOCTYPE html>
     <html lang="ru">
         <head>
             <meta charset="utf-8">
             <title>ТЕХНОМАРТ</title>
-            <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/style.css">
         </head>
@@ -80,28 +82,24 @@
                                     <a href="#">для стройки</a>
                                 </div>
                             </div>
-                            <div class="slider-block-big slider-drill">
-                                <h3>Дрели</h3>
-                                    <p>Cоседям на радость!</p>
-                                <a class="button" href="catalog.html">Открыть каталог</a>
-                                <a class="button-forward" href="#">
-                                    <img src="img/icon-right.svg" width="22" height="40" alt="Следующий слайдер">
-                                Вперед</a>
-                                <a class="button-back" href="#">
-                                    <img src="img/icon-left.svg" width="22" height="40" alt="Предыдущий слайдер">
-                                Назад</a>
-                            </div>
-                            <div class="slider-block-big slider-perforator">
-                                <h3>Перфораторы</h3>
-                                <p>Настоящие мужские игрушки</p>
-                                <a class="button" href="catalog.html">Открыть каталог</a>
-                                <a class="button-forward" href="#">
-                                    <img src="img/icon-right.svg" width="22" height="40" alt="Следующий слайдер">
-                                Вперед</a>
-                                <a class="button-back" href="#">
-                                    <img src="img/icon-left.svg" width="22" height="40" alt="Предыдущий слайдер">
-                                Назад</a>
-                            </div>
+    <div class="sliders">
+        <div class="slider-block-big slider-drill">
+            <h3>Дрели</h3>
+            <p>Cоседям на радость!</p>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
+        <div class="slider-block-big slider-perforator mySlides">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
+            <a class="button-forward">
+                <img src="img/icon-right.svg" width="22" height="40" alt="Следующий слайдер">
+            Вперед</a>
+            <a class="button-back">
+                <img src="img/icon-left.svg" width="22" height="40" alt="Предыдущий слайдер">
+            Назад</a>
+    </div>
                             <div class="second-line-sliders">
                                 <div class="slider-block-small sales">
                                     <h3>Скидки 50%</h3>
@@ -113,6 +111,8 @@
                                 </div>
                             </div>
                         </div>
+    </div>
+        
                 </section>
                 <section>
                     <div class="popular-headline-products container">
@@ -391,8 +391,8 @@
                 </div>
                 <!-- Попап "карта" -->
                 <div class="popap-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572051939813!5m2!1sru!2sru" width="945" height="450" style="border:0;" allowfullscreen=""></iframe>
-                    <img src="img/map-popap.png" alt="Магазин находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572051939813!5m2!1sru!2sru" width="940" height="450" style="border:0;" allowfullscreen=""></iframe> -->
+                    <img src="img/map-popap.jpg" alt="Магазин находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="940">
                     <button class="button-close" type="button">Закрыть</button>
                 </div>
                 <!-- Попап "добавление в корзину"-->
@@ -407,5 +407,6 @@
                 <script src="js/feedback.js"></script>
                 <script src="js/map.js"></script>
                 <script src="js/basket.js"></script>
+                <script src="js/sliders.js"></script>
         </body>
     </html>
