@@ -223,28 +223,34 @@
                         <h2>Сервисы</h2>
                             <p>Хороший интернет-магазин отчичается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                         <div class="services-item">
-                            <ul class="servises-link">
-                                <li><a class="link-delivery" href="#">Доставка</a></li>
-                                <li><a class="link-guarantee" href="#">Гарантия</a> </li>
-                                <li><a class="link-credit" href="#">Кредит</a></li>
-                            </ul>
-                            <ul class="services-block">
-                                <li class="services-delivery">
-                                    <h3>Доставка</h3>
-                                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br>
-                                    поднимая его на ваш этаж!</p>
-                                </li>
-                                <li class="services-guarantee">
-                                    <h3>Гарантия</h3>
-                                    <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
-                                    </p>
-                                </li>
-                                <li class="services-credit">
-                                    <h3>Кредит</h3>
-                                    <p>Залезть в долговую яму стало проще!<br>Кредитредитные консультанты придут вам на помощь.</p>
-                                    <a class="button" href="#">Отправить заявку</a>
-                                </li>
-                            </ul>
+                            <form action="https://echo.htmlacademy.ru" method="get">
+                                <ul class="servises-link">
+                                    <li class="delivery">
+                                        <input class="visualy-hidden" type="checkbox" name="delivery" id="delivery">
+                                        <label for="delivery">Доставка</label>
+                                        <span class="services-delivery">
+                                            <h3>Доставка</h3>
+                                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+                                        </span>     
+                                    </li>
+                                    <li class="guarantee">
+                                        <input class="visualy-hidden" type="checkbox" name="guarantee" id="guarantee">
+                                        <label for="guarantee">Гарантия</label>
+                                        <span class="services-guarantee">
+                                            <h3>Гарантия</h3>
+                                            <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+                                        </span>
+                                    </li>
+                                    <li class="credit">
+                                        <input class="visualy-hidden" type="checkbox" name="credit" id="credit">
+                                        <label for="credit">Кредит</label>
+                                        <span class="services-credit">
+                                            <h3>Кредит</h3>
+                                            <p>Залезть в долговую яму стало проще!<br>Кредитредитные консультанты придут вам на помощь.</p>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </form>
                         </div>
                     </div>
                 </section>
