@@ -1,28 +1,26 @@
-var but1 = document.querySelector(".but1");
-var but2 = document.querySelector(".but2");
-var but3 = document.querySelector(".but3");
+var slideIndexService = 1;
+showSlidesService(slideIndexService);
 
-var block1 = document.querySelector(".services-delivery");
-var block2 = document.querySelector(".services-guarantee");
-var block3 = document.querySelector(".services-credit");
+function plusSlides(n) {
+  showSlidesService(slideIndexService += n);
+}
 
-but1.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    block1.classList.add("services-delivery-show");
-    block2.classList.remove("services-guarantee-show");
-    block3.classList.remove("services-credit-show");
-});
+function currentSlide(n) {
+  showSlidesService(slideIndexService = n);
+}
 
-but2.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    block1.classList.remove("services-delivery-show");
-    block2.classList.add("services-guarantee-show");
-    block3.classList.remove("services-credit-show");
-});
-
-but3.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    block1.classList.remove("services-delivery-show");
-    block2.classList.remove("services-guarantee-show");
-    block3.classList.add("services-credit-show");
-});
+function showSlidesService(n) {
+  var i;
+  var slidesService = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slidesService.length) {
+    slideIndexService = 1
+}
+  if (n < 1) {
+    slideIndexService = slidesService.length
+}
+  for (i = 0; i < slidesService.length; i++) {
+      slidesService[i].style.display = "none";
+  }
+  slidesService[slideIndexService-1].style.display = "block";
+}

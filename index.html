@@ -124,10 +124,10 @@
                                 <article>
                                     <img src="img/Perforator_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
                                     <h3>Перфоратор BOSCH BFG 9000</h3>
-                                        <del>32500 Р.</del>
-                                        <ins>25500 Р.</ins>
+                                        <del class="price">32500 Р.</del>
+                                        <ins class="price">25500 Р.</ins>
                                     <div class="buttons-wrapper">
-                                        <a class="button-buy" href="#">Купить</a>
+                                    <a class="button-buy" href="#">Купить</a>
                                     <a class="button-bookmarks" href="#">В закладки</a>
                                     </div>
                                 </article>
@@ -136,8 +136,8 @@
                                 <article>
                                     <img src="img/Perforator_3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                                     <h3>Перфоратор BOSCH BFG 3000</h3>
-                                        <del>22500 Р</del>
-                                        <ins>15500 Р.</ins>
+                                        <del class="price">22500 Р</del>
+                                        <ins class="price">15500 Р.</ins>
                                     <a class="button-buy" href="#">Купить</a>
                                     <a class="button-bookmarks" href="#">В закладки</a>
                                 </article>
@@ -146,8 +146,8 @@
                                 <article>
                                     <img src="img/Perforator_6000.jpg" alt="Перфоратор BOSCH BFG 6000">
                                     <h3>Перфоратор BOSCH BFG 6000</h3>
-                                        <del>30500 Р.</del>
-                                        <ins>25500 Р.</ins>
+                                        <del class="price">30500 Р.</del>
+                                        <ins class="price">25500 Р.</ins>
                                     <a class="button-buy" href="#">Купить</a>
                                     <a class="button-bookmarks" href="#">В закладки</a>
                                 </article>
@@ -157,7 +157,7 @@
                                     <img src="img/Perforator_2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
                                     <span class="new-item">new</span>
                                     <h3>Перфоратор BOSCH BFG 2000</h3>
-                                        <ins>12500 Р.</ins>
+                                        <ins class="price-nodel">12500 Р.</ins>
                                     <a class="button-buy" href="#">Купить</a>
                                     <a class="button-bookmarks" href="#">В закладки</a>  
                                 </article>
@@ -223,20 +223,20 @@
                             <p>Хороший интернет-магазин отчичается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                         <div class="services-item">
                                 <ul class="servises-link">
-                                    <li><a class="but1">Доставка</a></li>
-                                    <li><a class="but2">Гарантия</a></li>
-                                    <li><a class="but3">Кредит</a></li>
+                                    <li><a class="dot" onclick="currentSlide(1)">Доставка</a></li>
+                                    <li><a class="dot" onclick="currentSlide(2)">Гарантия</a></li>
+                                    <li><a class="dot" onclick="currentSlide(3)">Кредит</a></li>
                                 </ul>
                                 <ul class="services-block">
-                                    <li class="services-delivery">
+                                    <li class="services-delivery MySlides">
                                             <h3>Доставка</h3>
                                             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>    
                                     </li>
-                                    <li class="services-guarantee">    
+                                    <li class="services-guarantee mySlides">    
                                             <h3>Гарантия</h3>
                                             <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
                                     </li>
-                                    <li class="services-credit">
+                                    <li class="services-credit mySlides">
                                             <h3>Кредит</h3>
                                             <p>Залезть в долговую яму стало проще!<br>Кредитредитные консультанты придут вам на помощь.</p>
                                     </li>
@@ -399,5 +399,6 @@
                 <script src="js/map.js"></script>
                 <script src="js/basket.js"></script>
                 <script src="js/sliders.js"></script>
+                <script src="js/services.js"></script>
         </body>
     </html>
