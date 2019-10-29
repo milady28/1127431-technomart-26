@@ -918,7 +918,6 @@ form.search {
 }
 
 .slider-block-big {
-	display: block;
 	position: relative;
 	margin-right: 20px;
 	margin-top: 20px;
@@ -962,8 +961,6 @@ form.search {
 }
 
 .slider-perforator {
-	position: absolute;
-	top: 0px;
 	z-index: 0;
 	background-image: url("../img/photo_index2.jpg");
 	background-repeat: no-repeat;
@@ -1723,9 +1720,10 @@ ins::after {
 	margin-top: 56px;
 }
 
-.servises-link label {
+.servises-link a {
 	display: inline-block;
-	/*width: 100%;*/
+	width: 100%;
+	border: none;
 	color: #ffffff;
 	font-size: 21px;
 	line-height: 30px;
@@ -1740,24 +1738,20 @@ ins::after {
 	cursor: pointer;
 }
 
-.servises-link label:hover {
+.servises-link a:hover {
 	background-color: #293449;
 }
 
-.servises-link input:checked + label {
+.servises-link a:active {
 	color: #32425c;
 	background-color: #ffffff;
 	box-shadow: none;
 }
 
-.servises-link input:checked + label + span {
-	display: inline-block;
-}
-
-.services-item:after {
+.services-item a:after {
 	content: "";
 	position: absolute;
-	left: 230px;
+	left: 231px;
 	top: -38px;
 	width: 10px;
 	height: 279px;
@@ -1774,10 +1768,6 @@ ins::after {
 	margin-bottom: 13px;
 }
 
-.services a {
-	color: #ffffff;
-}
-
 .services ul {
 	list-style: none;
 }
@@ -1785,6 +1775,10 @@ ins::after {
 .services-delivery {
 	display: none;
 	position: relative;
+}
+
+.services-delivery-show {
+	display: inline-block;
 }
 
 .services-delivery p {
@@ -1811,6 +1805,10 @@ ins::after {
 	position: relative;
 }
 
+.services-guarantee-show {
+	display: inline-block;
+}
+
 .services-guarantee p {
 	margin: 0;
 	padding: 0;
@@ -1834,6 +1832,10 @@ ins::after {
 	display: none;
 	position: relative;
 	margin-left: -3px;
+}
+
+.services-credit-show {
+	display: inline-block;
 }
 
 .services-credit p {
@@ -2398,9 +2400,10 @@ ins::after {
     left: 50%;
     top: 50%;
     z-index: 9999;
+    width: 940px;
     background-color: #ffffff;
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
-    margin-left: -472px;
+    margin-left: -470px;
     margin-top: -215px;
     display: none;
 }
@@ -2416,7 +2419,7 @@ ins::after {
 }
 
 .popap-map img {
-	position: relative;
+	position: absolute;
   	top: 0;
   	left: 0px;
   	z-index: 1;

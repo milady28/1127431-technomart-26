@@ -1,5 +1,4 @@
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 <!DOCTYPE html>
     <html lang="ru">
         <head>
@@ -82,24 +81,24 @@
                                     <a href="#">для стройки</a>
                                 </div>
                             </div>
-    <div class="sliders">
-        <div class="slider-block-big slider-drill">
-            <h3>Дрели</h3>
-            <p>Cоседям на радость!</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-        </div>
-        <div class="slider-block-big slider-perforator mySlides">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-        </div>
-            <a class="button-forward">
-                <img src="img/icon-right.svg" width="22" height="40" alt="Следующий слайдер">
-            Вперед</a>
-            <a class="button-back">
-                <img src="img/icon-left.svg" width="22" height="40" alt="Предыдущий слайдер">
-            Назад</a>
-    </div>
+                            <div class="sliders">
+                                <div class="slider-block-big slider-drill">
+                                    <h3>Дрели</h3>
+                                    <p>Cоседям на радость!</p>
+                                    <a class="button" href="catalog.html">Открыть каталог</a>
+                                </div>
+                                <div class="slider-block-big slider-perforator">
+                                    <h3>Перфораторы</h3>
+                                    <p>Настоящие мужские игрушки</p>
+                                    <a class="button" href="catalog.html">Открыть каталог</a>
+                                </div>
+                                    <a class="button-forward" onclick="plusSlide()">
+                                        <img src="img/icon-right.svg" width="22" height="40" alt="Следующий слайдер">
+                                    Вперед</a>
+                                    <a class="button-back" onclick="minusSlide()">
+                                        <img src="img/icon-left.svg" width="22" height="40" alt="Предыдущий слайдер">
+                                    Назад</a>
+                            </div>
                             <div class="second-line-sliders">
                                 <div class="slider-block-small sales">
                                     <h3>Скидки 50%</h3>
@@ -223,31 +222,23 @@
                         <h2>Сервисы</h2>
                             <p>Хороший интернет-магазин отчичается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                         <div class="services-item">
-                            <form action="https://echo.htmlacademy.ru" method="get">
                                 <ul class="servises-link">
-                                    <li class="delivery">
-                                        <input class="visualy-hidden" type="checkbox" name="delivery" id="delivery">
-                                        <label for="delivery">Доставка</label>
-                                        <span class="services-delivery">
+                                    <li><a class="but1">Доставка</a></li>
+                                    <li><a class="but2">Гарантия</a></li>
+                                    <li><a class="but3">Кредит</a></li>
+                                </ul>
+                                <ul class="services-block">
+                                    <li class="services-delivery">
                                             <h3>Доставка</h3>
-                                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
-                                        </span>     
+                                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>    
                                     </li>
-                                    <li class="guarantee">
-                                        <input class="visualy-hidden" type="checkbox" name="guarantee" id="guarantee">
-                                        <label for="guarantee">Гарантия</label>
-                                        <span class="services-guarantee">
+                                    <li class="services-guarantee">    
                                             <h3>Гарантия</h3>
                                             <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
-                                        </span>
                                     </li>
-                                    <li class="credit">
-                                        <input class="visualy-hidden" type="checkbox" name="credit" id="credit">
-                                        <label for="credit">Кредит</label>
-                                        <span class="services-credit">
+                                    <li class="services-credit">
                                             <h3>Кредит</h3>
                                             <p>Залезть в долговую яму стало проще!<br>Кредитредитные консультанты придут вам на помощь.</p>
-                                        </span>
                                     </li>
                                 </ul>
                             </form>
@@ -391,8 +382,8 @@
                 </div>
                 <!-- Попап "карта" -->
                 <div class="popap-map">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572051939813!5m2!1sru!2sru" width="940" height="450" style="border:0;" allowfullscreen=""></iframe> -->
-                    <img src="img/map-popap.jpg" alt="Магазин находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="940">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572051939813!5m2!1sru!2sru" width="940" height="450" style="border:0;" allowfullscreen=""></iframe>
+                    <img src="img/map-popap.jpg" alt="Магазин находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                     <button class="button-close" type="button">Закрыть</button>
                 </div>
                 <!-- Попап "добавление в корзину"-->
