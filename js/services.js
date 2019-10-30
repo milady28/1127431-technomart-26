@@ -23,4 +23,5 @@ function showSlidesService(n) {
       slidesService[i].style.display = "none";
   }
   slidesService[slideIndexService-1].style.display = "block";
-};
+}
+
