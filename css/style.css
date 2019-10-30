@@ -92,8 +92,8 @@ img {
 }
 
 .button-page-style li {
-	margin-top: 42px;
-	margin-bottom: 58px;
+	margin-top: 41px;
+	margin-bottom: 60px;
 	margin-right: 10px;
 }
 
@@ -101,11 +101,18 @@ img {
 	display: inline-block;
 	text-align: center;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 	padding-left: 16px;
-	padding-right: 15px;
+	padding-right: 14px;
 	border-radius: 4px;
+	color: #000000;
 }
+
+.button-page-next a {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .button-catalog:first-child {
 	margin-left: 10px;
 }
@@ -1052,7 +1059,7 @@ form.search {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	margin-top: 21px;
+	margin-top: 20px;
 	list-style: none;
 }
 
@@ -1114,7 +1121,7 @@ form.search {
 .filter-title-block {
 	display: flex;
 	align-items: flex-start;
-	margin-top: 20px;
+	margin-top: 19px;
 }
 
 .filter-title-block h3 {
@@ -1127,21 +1134,22 @@ form.search {
 	margin: 0;
 	padding: 0;
 	margin-right: 20px;
-	padding-top: 10px;
+	padding-top: 11px;
 	padding-right: 152px;
 	padding-left: 18px;
 	padding-bottom: 10px;
 	background-color: #f7f3ec;
 }
 
-.sorting-catalog h3 {
-	padding-right: 0px;
+.sorting-type h3 {
+	padding: 0;
+	padding-left: 20px;
+	padding-right: 56px;
 	background-color: transparent;
 }
 
 .sorting-catalog {
 	display: flex;
-	align-items: flex-start;
 	width: 100%;
 	border-radius: 4px;
 	background-color: #f7f3ec;
@@ -1152,7 +1160,6 @@ form.search {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	margin-left: 120px;
 }
 
 .sorting-type a {
@@ -1167,9 +1174,8 @@ form.search {
 }
 
 .sorting-type li {
-	/*display: inline-block;*/
-	margin-right: 40px;
-	padding-top: 9px;
+	margin-right: 66px;
+	padding-top: 10px;
 	padding-bottom: 9px;
 }
 
@@ -1194,7 +1200,7 @@ form.search {
 	display: block;
 	position: absolute;
 	top: 9px;
-	right: 8px;
+	right: 5px;
 	padding: 5px;
 }
 
@@ -1202,7 +1208,7 @@ form.search {
 	display: block;
 	position: absolute;
 	top: 9px;
-	right: -23px;
+	right: -28px;
 	padding: 5px;
 }
 
@@ -1236,7 +1242,7 @@ form.search {
 .filter-catalog fieldset {
 	margin: 0;
 	padding: 0;
-	margin-top: 14px;
+	margin-top: 11px;
 	width: 220px;
 	border: none;
 	border-bottom: 1px solid #e5e5e5;
@@ -1244,7 +1250,7 @@ form.search {
 
 .range-controls {
   	position: relative;
-	padding-top: 39px;
+	padding-top: 41px;
 	padding-right: 20px;
 	padding-bottom: 39px;
 	padding-left: 20px;
@@ -1266,7 +1272,7 @@ form.search {
 
 .range-toggle {
 	position: absolute;
-	top: 30px;
+	top: 32px;
 	width: 20px;
 	height: 20px;
 	background: #b1b1b1;
@@ -1293,8 +1299,9 @@ form.search {
 }
 
 .price-controls input {
+	
   	width: 95px;
-  	height: 38px;
+  	height: 36px;
   	margin: 0;
   	margin-bottom: 25px;
  	text-align: center;
@@ -1307,11 +1314,13 @@ form.search {
 }
 
 .min-price input {
-	margin-right: 8px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	margin-right: 5px;
 }
 
 .max-price input {
-	margin-left: 7px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	margin-left: 10px;
 }
 
 .catalog-main-block {
@@ -1446,12 +1455,12 @@ fieldset.filter-power {
 }
 
 .filter-catalog .button-catalog {
-	margin-top: 55px;
+	margin-top: 56px;
 	text-align: center;
 	background-color: transparent;
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-right: 39px;
-	padding-bottom: 14px;
+	padding-bottom: 8px;
 	padding-left: 39px;
 	cursor: pointer;
 }
@@ -1546,7 +1555,7 @@ fieldset.filter-power {
 	margin: 0;
 	padding: 0;
 	width: 220px;
-	height: 318px;
+	padding-bottom: 20px;
 	overflow: hidden;
 	margin-top: 19px;
 	margin-right: 20px;
@@ -1623,7 +1632,7 @@ fieldset.filter-power {
 	background-color: #ee3643;
 }
 
-ins::after {
+.product ins::after {
 	content: "";
 	position: absolute;
 	right: 35px;
@@ -1710,14 +1719,16 @@ ins::after {
 }
 
 .perforator-article h2 {
+	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	padding-top: 65px;
-	padding-bottom: 28px;
+	padding-bottom: 26px;
 }
 
 .perforator-article p {
 	display: flex;
+	font-family: "PT Sans", "Arial", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -2002,7 +2013,8 @@ ins::after {
 	margin-top: 151px;
 }
 
-.footer-catalog .footer-background {
+.footer-background-catalog {
+	background-color: #32425c;
 	margin-top: 0;
 }
 
