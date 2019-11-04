@@ -8,8 +8,8 @@ body {
 	font-weight: 400;
 	color: #000000;
 
-  	background-color: #ffffff;
-  	box-sizing: border-box;
+	background-color: #ffffff;
+	box-sizing: border-box;
 }
 
 *,
@@ -64,7 +64,7 @@ img {
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
-	
+
 	background-color: #ee3643;
 	border-radius: 4px;
 }
@@ -108,7 +108,7 @@ img {
 	position: absolute;
 	top: 11px;
 	left: 14px;
-	
+
 	width: 15px;
 	height: 15px;
 
@@ -135,7 +135,7 @@ img {
 	text-align: center;
 	color: #32425c;
 	text-transform: uppercase;
-	
+
 	background-color: #ffffff;
 	border: 3px solid;
 	border-color: #63a63e;
@@ -157,7 +157,7 @@ img {
 	color: #000000;
 	font-weight: 400;
 	text-transform: uppercase;
-	
+
 	background-color: #ffffff;
 	border: 1px solid;
 	border-radius: 4px;
@@ -179,7 +179,7 @@ img {
 .button-page-style li {
 	margin-top: 42px;
 	margin-right: 10px;
-	margin-bottom: 60px;	
+	margin-bottom: 60px;
 }
 
 .button-page-style a {
@@ -189,7 +189,7 @@ img {
 	padding-right: 14px;
 	padding-bottom: 8px;
 	padding-left: 16px;
-	
+
 	text-align: center;
 	color: #000000;
 
@@ -226,18 +226,19 @@ img {
 	color: #ffffff;
 }
 
-.logo-head a {
+.logo-head a,
+.logo-head-index a {
 	position: relative;
 
 	display: block;
 	width: 220px;
-  	min-height: 47px;
+	min-height: 47px;
 	margin-bottom: -5px;
 	padding-top: 14px;
 	padding-left: 55px;
-	
-  	background-color: #ee3643;
-  	box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+
+	background-color: #ee3643;
+	box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .logo-head a:hover {
@@ -363,7 +364,6 @@ form.search {
 	background-image: url("../img/icon-cart.svg");
 	background-repeat: no-repeat;
 	opacity: 0.3;
-	
 }
 
 .bookmarks:hover,
@@ -403,7 +403,7 @@ form.search {
 
 .head-menu p:focus {
 	background-color: #ffffff;
-} 
+}
 
 .main-info {
 	display: flex;
@@ -437,7 +437,7 @@ form.search {
 	margin-top: 4px;
 	margin-left: 68px;
 	padding: 0;
-	
+
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
@@ -459,7 +459,7 @@ form.search {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
-	
+
 	border: 3px solid;
 	border-color: #ffffff;
 }
@@ -488,7 +488,7 @@ form.search {
 	padding: 0;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	
+
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
@@ -500,7 +500,7 @@ form.search {
 	position: absolute;
 	top: 14px;
 	left: 14px;
-} 
+}
 
 .button-head a:hover {
 	color: #ee3643;
@@ -514,7 +514,7 @@ form.search {
 	color: #000000;
 
 	opacity: 0.3;
-} 
+}
 
 .button-head .button-logout {
 	padding-right: 26px;
@@ -579,7 +579,7 @@ form.search {
 	margin-left: 51px;
 	padding: 0;
 	padding-left: 16px;
-	
+
 	background-color: #ffffff;
 }
 
@@ -770,7 +770,7 @@ form.search {
 
 	width: 44px;
 	height: 65px;
-	
+
 	background-position: top right;
 	background-image: url("../img/icon-1.svg");
 	background-repeat: no-repeat;
@@ -785,7 +785,7 @@ form.search {
 	padding-right: 24px;
 	padding-bottom: 10px;
 	padding-left: 24px;
-	
+
 	text-transform: uppercase;
 }
 
@@ -800,14 +800,14 @@ form.search {
 	vertical-align: middle;
 	width: 90px;
 	padding: 4px 0;
-	
+
 	font-size: 15px;
 	line-height: 20px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-align: center;
 	color: #ffffff;
 	font-weight: 400;
-	
+
 	background-color: #ee3643;
 
 	transform: rotate(45deg);
@@ -842,14 +842,14 @@ form.search {
 	position: absolute;
 	bottom: 21px;
 	left: 25px;
-	
+
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 27px;
 	padding-right: 27px;
 
 	text-transform: uppercase;
-	
+
 	background-color: #35a9cc;
 	border-radius: 3px;
 }
@@ -873,7 +873,7 @@ form.search {
 
 	width: 78px;
 	height: 62px;
-	
+
 	background-position: top right;
 	background-image: url("../img/icon-3.svg");
 	background-repeat: no-repeat;
@@ -959,7 +959,7 @@ form.search {
 
 	width: 78px;
 	height: 63px;
-	
+
 	background-position: top right;
 	background-image: url("../img/icon-5.svg");
 	background-repeat: no-repeat;
@@ -1003,7 +1003,7 @@ form.search {
 	height: 266px;
 	margin-top: 20px;
 	margin-right: 20px;
-	
+
 	opacity: 1;
 }
 
@@ -1011,7 +1011,7 @@ form.search {
 	position: absolute;
 	top: -13px;
 	left: 24px;
-	
+
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: bold;
@@ -1037,18 +1037,18 @@ form.search {
 
 	background-position: top center;
 	background-color: #b9a896;
-	background-image: url("../img/photo_index1.jpg");
+	background-image: url("../img/photo-index1.jpg");
 	background-repeat: no-repeat;
 }
 
 .slider-perforator {
-	z-index: 0;
+	z-index: 1;
 
 	display: none;
 
 	background-position: top center;
 	background-color: #b9a896;
-	background-image: url("../img/photo_index2.jpg");
+	background-image: url("../img/photo-index2.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -1062,7 +1062,7 @@ form.search {
 	height: 40px;
 
 	color: #000000;
-	
+
 	cursor: pointer;
 }
 
@@ -1074,7 +1074,7 @@ form.search {
 
 	width: 22px;
 	height: 40px;
-	
+
 	cursor: pointer;
 }
 
@@ -1093,15 +1093,15 @@ form.search {
 	margin: 0 4px;
 
 	background-color: #ffffff;
-  	border-radius: 50%;
+	border-radius: 50%;
 
-  	cursor: pointer;
+	cursor: pointer;
 }
 
-.active, 
+.active,
 .dot:hover {
-  	background-color: #ee3643;
-  	border: 2px solid #ffffff;
+	background-color: #ee3643;
+	border: 2px solid #ffffff;
 }
 
 .catalog-title {
@@ -1118,7 +1118,7 @@ form.search {
 	margin: 0;
 	margin-top: 21px;
 	padding: 0;
-	
+
 	list-style: none;
 }
 
@@ -1196,13 +1196,14 @@ form.search {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	
+
 	background-color: #f7f3ec;
 	border-radius: 4px;
 }
 
 .sorting-catalog {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 
 	background-color: #f7f3ec;
@@ -1211,6 +1212,7 @@ form.search {
 
 .sorting-catalog ul {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	margin: 0;
 	padding: 0;
@@ -1224,24 +1226,25 @@ form.search {
 }
 
 .sorting-type h3 {
+	margin-right: 0;
 	padding: 0;
-	padding-right: 118px;
-	padding-left: 20px;
-	
+	padding-right: 140px;
+	padding-left: 18px;
+
 	background-color: transparent;
 }
 
 .sorting-type li {
-	padding-top: 9px;
-	padding-bottom: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
-.sorting-type li:not(:first-child) {
+.sorting-type li:not(:nth-last-child(-n+3)) {
 	margin-right: 69px;
 }
 
-.sorting-type li:last-child {
-	margin-right: 41px;
+.sorting-type li:nth-child(1) {
+	margin-right: 0;
 }
 
 .sorting-type a {
@@ -1264,42 +1267,32 @@ form.search {
 	opacity: 1;
 }
 
-.sorting-button li {
-	position: relative;
-
-	margin: 0;
-}
-
 .sorting-button a:not(.active-sorting) {
 	opacity: 0.3;
 }
 
 .sorting-ascending {
 	display: block;
+	margin-left:41px;
 	padding: 4px;
 }
 
 .sorting-descending {
 	display: block;
-	margin-left: 12px;
+	margin-left: 13px;
 	padding: 4px;
 }
 
-.sorting-ascending:hover:not(.active-sorting) path,
-.sorting-descending:hover:not(.active-sorting) path {
+.sorting-ascending:not(.active-sorting):hover,
+.sorting-descending:not(.active-sorting):hover {
 	opacity: 1;
-}
-
-.sorting-ascending:active path,
-.sorting-descending:active path {
-	fill: #ee3643;
 }
 
 .filter-catalog fieldset {
 	width: 220px;
 	margin: 0;
 	padding: 0;
-	
+
 	border: none;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -1328,7 +1321,7 @@ form.search {
 	text-align: center;
 
 	background-color: transparent;
-	
+
 	cursor: pointer;
 }
 
@@ -1337,9 +1330,9 @@ fieldset.filter-price {
 }
 
 .range-controls {
-  	position: relative;
+	position: relative;
 
-  	margin-bottom: 10px;
+	margin-bottom: 10px;
 	padding-top: 41px;
 	padding-right: 20px;
 	padding-bottom: 39px;
@@ -1356,10 +1349,10 @@ fieldset.filter-price {
 }
 
 .range-controls .bar {
-  	width: 80%;
-  	height: 2px;
+	width: 80%;
+	height: 2px;
 
-  	background-color: #00ca74;
+	background-color: #00ca74;
 }
 
 .range-toggle {
@@ -1378,15 +1371,15 @@ fieldset.filter-price {
 }
 
 .range-toggle:hover {
-  	background: #1c4f80;
+	background: #1c4f80;
 }
 
 .range-toggle-min {
-  	left: 15px;
+	left: 15px;
 }
 
 .range-toggle-max {
-  	left: 70%;
+	left: 70%;
 }
 
 .price-controls {
@@ -1394,14 +1387,14 @@ fieldset.filter-price {
 }
 
 .price-controls input {
-  	width: 95px;
-  	height: 36px;
-  	margin: 0;
+	width: 95px;
+	height: 36px;
+	margin: 0;
 
-  	font: inherit;
- 	text-align: center;
+	font: inherit;
+	text-align: center;
 	color: inherit;
-	
+
 	background: none;
 	border: none;
 	border-radius: 4px;
@@ -1447,8 +1440,6 @@ fieldset.filter-fabricator {
 	display: block;
 
 	cursor: pointer;
-
-	user-select: none;
 }
 
 .filter-fabricator input + label::before {
@@ -1457,7 +1448,7 @@ fieldset.filter-fabricator {
 	position: absolute;
 	top: -2px;
 	left: -34px;
-	
+
 	width: 23px;
 	height: 23px;
 
@@ -1477,17 +1468,20 @@ fieldset.filter-fabricator {
 	position: absolute;
 	top: -2px;
 	left: -34px;
-	
+
 	width: 27px;
 	height: 23px;
 
 	background-position: 0 0;
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
+	opacity: 0.7;
 }
 
 .filter-fabricator input:hover + label::before,
-.filter-fabricator input:hover + label::after {
+.filter-fabricator input:focus + label::before,
+.filter-fabricator input:hover + label::after,
+.filter-fabricator input:focus + label::after {
 	opacity: 1;
 }
 
@@ -1514,10 +1508,8 @@ fieldset.filter-power {
 	position: relative;
 
 	display: block;
-	
-	cursor: pointer;
 
-	user-select: none;
+	cursor: pointer;
 }
 
 .filter-power input + label::before {
@@ -1526,7 +1518,7 @@ fieldset.filter-power {
 	position: absolute;
 	top: -3px;
 	left: -35px;
-	
+
 	width: 25px;
 	height: 25px;
 
@@ -1546,7 +1538,7 @@ fieldset.filter-power {
 	position: absolute;
 	top: -3px;
 	left: -35px;
-	
+
 	width: 25px;
 	height: 25px;
 
@@ -1557,7 +1549,9 @@ fieldset.filter-power {
 }
 
 .filter-power input:hover + label::before,
-.filter-power input:hover + label::after {
+.filter-power input:focus + label::before,
+.filter-power input:hover + label::after,
+.filter-power input:focus + label::after {
 	opacity: 1;
 }
 
@@ -1575,14 +1569,6 @@ fieldset.filter-power {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-}
-
-.filter-input:hover::before {
-	color: #b5b5b5;
-}
-
-.filter-input:disabled {
-	opacity: 0.4;
 }
 
 .popular-headline-products {
@@ -1636,7 +1622,7 @@ fieldset.filter-power {
 	padding: 0;
 	padding-bottom: 20px;
 	background-color: #ffffff;
-	
+
 	border: 1px solid;
 	border-color: #e5e5e5;
 	overflow: hidden;
@@ -1663,16 +1649,16 @@ fieldset.filter-power {
 
 .product article:hover {
 	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
-} 
+}
 
 .product article:hover img {
 	opacity: 0;
-} 
+}
 
 .product article:hover div {
 	display: inline-block;
 	vertical-align: middle;
-} 
+}
 
 .product del {
 	font-size: 17px;
@@ -1687,7 +1673,7 @@ fieldset.filter-power {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 15px;
-	
+
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1743,7 +1729,7 @@ fieldset.filter-power {
 	font-weight: 400;
 
 	background-color: #ee3643;
-	
+
 	transform: rotate(45deg);
 }
 
@@ -1856,11 +1842,11 @@ fieldset.filter-power {
 	border: 1px solid;
 	border-color: #e5e5e5;
 	box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.5);
-} 
+}
 
 .popular-fabricators a:active {
 	opacity: 0.3;
-} 
+}
 
 .article-bg-index {
 	padding-bottom: 97px;
@@ -1905,7 +1891,7 @@ fieldset.filter-power {
 	margin: 0;
 	margin-bottom: 13px;
 	padding: 0;
-	
+
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -1962,7 +1948,7 @@ fieldset.filter-power {
 	display: none;
 }
 
-.servises-link a {
+.dotService {
 	display: inline-block;
 	vertical-align: middle;
 	width: 100%;
@@ -1980,19 +1966,12 @@ fieldset.filter-power {
 	background-color: #32425c;
 	border: none;
 	box-shadow: 0 1px 0 0 rgba(41, 52, 73, 1), 0px 1px 0px 0px rgba(64, 80, 105, 1) inset;
-	
+
 	cursor: pointer;
 }
 
-.servises-link a:hover {
+.servises-link a:not(.activeService):hover {
 	background-color: #293449;
-}
-
-.servises-link a:active {
-	color: #32425c;
-
-	background-color: #ffffff;
-	box-shadow: none;
 }
 
 .services-article p {
@@ -2021,7 +2000,7 @@ fieldset.filter-power {
 
 	width: 468px;
 	height: 261px;
-	
+
 	background-image: url("../img/delivery.png");
 	background-repeat: no-repeat;
 }
@@ -2053,7 +2032,7 @@ fieldset.filter-power {
 
 	width: 389px;
 	height: 283px;
-	
+
 	background-image: url("../img/guarantee.png");
 	background-repeat: no-repeat;
 }
@@ -2081,7 +2060,7 @@ fieldset.filter-power {
 
 	width: 465px;
 	height: 285px;
-	
+
 	background-image: url("../img/credit.png");
 	background-repeat: no-repeat;
 }
@@ -2098,6 +2077,13 @@ fieldset.filter-power {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 86px;
+}
+
+.activeService {
+	color: #32425c;
+
+	background-color: #ffffff;
+	box-shadow: none;
 }
 
 .feature {
@@ -2142,7 +2128,7 @@ fieldset.filter-power {
 	position: absolute;
 	top: 10px;
 	left: -36px;
-	
+
 	width: 25px;
 	height: 2px;
 
@@ -2224,7 +2210,7 @@ fieldset.filter-power {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 31px;
-	
+
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
@@ -2238,14 +2224,15 @@ fieldset.filter-power {
 	color: #ffffff;
 }
 
-.logo-footer a {
+.logo-footer a,
+.logo-footer-index a {
 	display: inline-block;
 	vertical-align: middle;
 	width: 220px;
 	height: 68px;
 	padding-top: 21px;
 	padding-left: 42px;
-	
+
 	background-color: #ee3643;
 	box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
@@ -2274,7 +2261,7 @@ fieldset.filter-power {
 	display: flex;
 	margin: 0;
 	margin-top: 16px;
-	margin-left: 22px;	
+	margin-left: 22px;
 	padding: 0;
 }
 
@@ -2439,7 +2426,7 @@ fieldset.filter-power {
 	margin-top: -215px;
 	margin-left: -310px;
 	padding-top: 46px;
-	
+
 	background-color: #ffffff;
 	border-top: 7px solid;
 	border-top-color: #ff5357;
@@ -2540,10 +2527,10 @@ fieldset.filter-power {
 	position: relative;
 
 	width: 100%;
-	
-  	border: none;
 
-  	cursor: pointer;
+	border: none;
+
+	cursor: pointer;
 }
 
 .button-close,
@@ -2555,11 +2542,11 @@ fieldset.filter-power {
 	padding: 0;
 
 	color: inherit;
-  	
-  	background-color: transparent;
-  	border: none;
 
-  	cursor: pointer;
+	background-color: transparent;
+	border: none;
+
+	cursor: pointer;
 }
 
 .button-close::before,
@@ -2568,15 +2555,15 @@ fieldset.filter-power {
 
 	position: absolute;
 	z-index: 9999;
-	
+
 	width: 21px;
 	height: 21px;
 
 	background-image: url("../img/icon-close.svg");
 	background-repeat: no-repeat;
-	
+
 	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 }
 
 .button-submit {
@@ -2601,26 +2588,27 @@ fieldset.filter-power {
 	margin-top: -215px;
 	margin-left: -470px;
 	width: 940px;
-    
-    background-color: #ffffff;
+
+	background-color: #ffffff;
 	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .popap-map iframe {
-  	position: relative;
-  	z-index: 2;
+	position: relative;
+	z-index: 2;
 
-  	border: none;
+	border: none;
 }
 
 .popap-map img {
 	position: absolute;
-  	top: 0;
-  	left: 0px;
-  	z-index: 1;
+	top: 0;
+	left: 0px;
+	z-index: 1;
 
-  	margin: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .popap-map-show {
@@ -2645,9 +2633,9 @@ fieldset.filter-power {
 
 	display: none;
 	margin-left: -310px;
-    margin-top: -215px;
+	margin-top: -215px;
 
-    background-color: #ffffff;
+	background-color: #ffffff;
 	border-top: 7px solid;
 	border-top-color: #ff5357;
 	box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
@@ -2671,7 +2659,7 @@ fieldset.filter-power {
 	position: absolute;
 	top: 90px;
 	left: 82px;
-	
+
 	width: 70px;
 	height: 70px;
 
@@ -2699,22 +2687,22 @@ fieldset.filter-power {
 	position: relative;
 
 	width: 220px;
-  	height: 38px;
-  	margin-right: 20px;
+	height: 38px;
+	margin-right: 20px;
 
-  	border: none;
+	border: none;
 
-  	cursor: pointer;
+	cursor: pointer;
 }
 
 .button-popap-basket .button-catalog {
 	width: 220px;
-  	height: 38px;
-  	padding-top: 4px;
+	height: 38px;
+	padding-top: 4px;
 
-  	border-radius: 4px;
+	border-radius: 4px;
 
-  	cursor: pointer;
+	cursor: pointer;
 }
 
 .button-popap-basket .button-catalog:hover {
@@ -2731,9 +2719,9 @@ fieldset.filter-power {
 	color: inherit;
 
 	background-color: transparent;
- 	border: none;
-  	
-  	cursor: pointer;
+	border: none;
+
+	cursor: pointer;
 }
 
 .button-popap-basket .button-close::before {
@@ -2742,7 +2730,7 @@ fieldset.filter-power {
 	position: absolute;
 	top: 0px;
 	right: -18px;
-	
+
 	width: 21px;
 	height: 21px;
 

@@ -105,84 +105,103 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var nextSlideButton = document.querySelector(".button-forward");
+var prevSlideButton = document.querySelector(".button-back");
 
-function plusSlide() {
+nextSlideButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    plusSlideBtn();
+});
+
+prevSlideButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    minusSlideBtn();
+});
+
+function plusSlideBtn() {
     showSlides(slideIndex += 1);
 }
 
-function minusSlide() {
+function minusSlideBtn() {
     showSlides(slideIndex -= 1);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
+var dots = document.getElementsByClassName("dot");
+var dotsArea = document.getElementsByClassName("dots-slider")[0];
+var slides = document.getElementsByClassName("mySlides");
 var slideIndex = 1;
+
 showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-
+function showSlides (n) {
     if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
+    } else if (n > slides.length) {
+        slideIndex = 1;
     }
 
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
     }
 
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-} 
-
-var slideIndexService = 1;
-showSlidesService(slideIndexService);
-
-function plusSlidesService(n) {
-    showSlidesService(slideIndexService += n);
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
 }
 
-function currentSlideService(n) {
+function plusSlides (n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide (n) {
+    showSlides(slideIndex = n);
+}
+
+dotsArea.onclick = function (e) {
+    for (var i = 0; i < dots.length + 1; i++) {
+        if (e.target.classList.contains("dot") && e.target == dots[i-1]) {
+            currentSlide(i);
+        }
+    }
+}
+
+var dotService = document.getElementsByClassName("dotService");
+var linkArea = document.getElementsByClassName("servises-link")[0];
+var slidesService = document.getElementsByClassName("mySlidesService");
+var slideIndexService = 1;
+
+showSlidesService(slideIndexService);
+
+function showSlidesService (n) {
+    if (n < 1) {
+        slideIndexService = slidesService.length;
+    } else if (n > slidesService.length) {
+        slideIndexService = 1;
+    }
+
+    for (var i = 0; i < slidesService.length; i++) {
+        slidesService[i].style.display = "none";
+    }
+
+    for (var i = 0; i < dotService.length; i++) {
+        dotService[i].classList.remove("activeService");
+    }
+
+    slidesService[slideIndexService - 1].style.display = "block";
+    dotService[slideIndexService - 1].classList.add("activeService");
+}
+
+function currentSlideService (n) {
     showSlidesService(slideIndexService = n);
 }
 
-function showSlidesService(n) {
-    var i;
-    var slidesService = document.getElementsByClassName("mySlidesService");
-    var dotsService = document.getElementsByClassName("dotService");
-
-    if (n > slidesService.length) {
-        slideIndexService = 1
+linkArea.onclick = function (e) {
+    for (var i = 0; i < dotService.length + 1; i++) {
+        if (e.target.classList.contains("dotService") && e.target == dotService[i-1]) {
+            currentSlideService(i);
+        }
     }
-
-    if (n < 1) {
-        slideIndexService = slidesService.length
-    }
-
-    for (i = 0; i < slidesService.length; i++) {
-      slidesService[i].style.display = "none";
-    }
-
-    slidesService[slideIndexService-1].style.display = "block";
-};
+}
